@@ -1,0 +1,83 @@
+body{
+    width: 100vw;
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+header,
+footer{
+    height: 30px;
+    align-content: center;
+    text-align: center;
+}
+
+#asideLeft,
+#asideRight,
+#content{
+    height: 200px;
+}
+
+#asideLeft,
+#asideRight{
+    width: 25%;
+}
+
+#mainContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#content{
+    width: 50%;
+    background-color: dodgerblue ;
+}
+
+header{
+    background-color: red;
+}
+
+#asideLeft{
+    background-color: green;
+}
+
+#asideRight{
+    background-color: pink;
+}
+
+footer{
+    background-color: purple;
+}
+
+@media (max-width: 767px){
+    #asideLeft{
+        width: 100%;
+        order: 2;
+    }
+    #asideRight{
+        width: 100%;
+        order: 3;
+    }
+    #content{
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    #asideLeft{
+        width: 100%;
+        order: 2;
+    }
+
+    #content{
+        width: 75%;
+    }
+}
+/* 
+@media (min-width: 992px){
+
+} */
